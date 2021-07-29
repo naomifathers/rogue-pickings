@@ -1,0 +1,146 @@
+/***** UNIVERSAL STYLES *****/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: montserrat;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+/***** GRID *****/
+
+.full-width {
+  margin: 0 auto;
+  overflow: auto;
+  width: 1200px;
+}
+
+.half-width {
+  float: left;
+  overflow: auto;
+  width: 600px;
+}
+
+.third-width {
+  float: left;
+  overflow: auto;
+  width: 400px;
+}
+
+/***** HEADER *****/
+
+header h1 {
+  padding: 50px 0;
+}
+
+header #rogue {
+  color: #77a466;
+}
+
+nav {
+  float: right;
+  padding: 80px 0;
+}
+
+header ul li {
+  color: #77a466;
+  display: inline-block;
+  font-weight: 700;
+  list-style-type: none;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+header img {
+  border-bottom: 4px solid #77a466;
+  border-top: 4px solid #77a466;
+}
+
+/***** INTRO *****/
+
+#intro .full-width {
+  border-bottom: 2px solid #eee;
+}
+
+#intro h2 {
+  color: #77a466;
+}
+
+#intro h2,
+#intro p {
+  margin: 28px 0;
+}
+
+/***** SPECIALS-REVIEWS-CONTACT *****/
+
+#three-boxes .full-width {
+  border-bottom: 2px solid #eee;
+}
+
+#three-boxes .third-width {
+  padding-bottom: 23px;
+}
+
+#three-boxes h3 {
+  margin: 23px 0;
+}
+
+#specials ul li {
+  color: #77a466;
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+#specials .third-width,
+#reviews .third-width {
+  border-right: 2px solid #eee;
+}
+
+#reviews .third-width,
+#contact .third-width {
+  padding: 0 25px 25px 25px;
+}
+
+/***** FOOTER *****/
+
+footer .full-width {
+  clear: both;
+}
+
+footer h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+footer #fresh {
+  color: #77a466;
+  font-family: 'dancing script';
+  font-size: 30px;
+  text-transform: lowercase;
+}
