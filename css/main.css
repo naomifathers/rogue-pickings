@@ -1,146 +1,168 @@
-/***** UNIVERSAL STYLES *****/
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+html {
+	font-size: 16px;
+	height: 100%;
 }
 
 body {
-  font-family: montserrat;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	height: 100%;	
 }
 
-p {
-  line-height: 1.5;
+.container {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 90%;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 700;
-  text-transform: uppercase;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
 }
-
 h1 {
-  font-size: 30px;
+	font-size: 1.875em;
 }
-
 h2 {
-  font-size: 16px;
+	font-size: 1.125em;
 }
-
 h3 {
-  font-size: 14px;
+	font-size: 0.75em;
 }
 
-/***** GRID *****/
-
-.full-width {
-  margin: 0 auto;
-  overflow: auto;
-  width: 1200px;
+p {
+	font-size: 0.875em;
+	line-height: 21px;
+   
 }
 
-.half-width {
-  float: left;
-  overflow: auto;
-  width: 600px;
+/*The widths are in a percentage!*/
+header {
+	align-items: center;
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+	
 }
-
-.third-width {
-  float: left;
-  overflow: auto;
-  width: 400px;
-}
-
-/***** HEADER *****/
 
 header h1 {
-  padding: 50px 0;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	padding: 25px 0;
+	text-align: center;
+	width: 100%;
+	
+}
+header h1 span {
+	color: #77a466;
 }
 
-header #rogue {
-  color: #77a466;
+header nav {
+	padding: 20px 0;
+}
+header nav ul {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 10px 10px;
+	display: inline;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
 }
 
-nav {
-  float: right;
-  padding: 80px 0;
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
 }
 
-header ul li {
-  color: #77a466;
-  display: inline-block;
-  font-weight: 700;
-  list-style-type: none;
-  padding-left: 20px;
-  text-transform: uppercase;
+.main-image {
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 }
 
-header img {
-  border-bottom: 4px solid #77a466;
-  border-top: 4px solid #77a466;
+.main-title {
+
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
 }
 
-/***** INTRO *****/
-
-#intro .full-width {
-  border-bottom: 2px solid #eee;
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	border-top: 1px solid #eee;
 }
 
-#intro h2 {
-  color: #77a466;
+.section-one h3,
+.section-two h3,
+.section-three h3 {
+	padding: 10px 0;
 }
 
-#intro h2,
-#intro p {
-  margin: 28px 0;
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
 }
 
-/***** SPECIALS-REVIEWS-CONTACT *****/
-
-#three-boxes .full-width {
-  border-bottom: 2px solid #eee;
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
 }
 
-#three-boxes .third-width {
-  padding-bottom: 23px;
+.address {
+	font-size: 1em;
+	line-height: 24px;
 }
 
-#three-boxes h3 {
-  margin: 23px 0;
+/*The widths are in a percentage!*/
+footer {
+	align-items: center;
+	display: flex;
+	border-top: 3px solid #eee;
+	justify-content: center;
+	margin: 10px auto;
 }
-
-#specials ul li {
-  color: #77a466;
-  list-style-type: none;
-  margin: 20px 0;
-}
-
-#specials .third-width,
-#reviews .third-width {
-  border-right: 2px solid #eee;
-}
-
-#reviews .third-width,
-#contact .third-width {
-  padding: 0 25px 25px 25px;
-}
-
-/***** FOOTER *****/
-
-footer .full-width {
-  clear: both;
-}
-
-footer h2 {
-  margin: 30px 0;
-  text-align: center;
-}
-
-footer #fresh {
-  color: #77a466;
-  font-family: 'dancing script';
-  font-size: 30px;
-  text-transform: lowercase;
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
 }
