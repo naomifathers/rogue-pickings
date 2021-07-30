@@ -4,9 +4,10 @@ html {
 }
 
 body {
+	display: flex;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	height: 100%;	
+	font-size: 1em;	
+	justify-content: center;
 }
 
 .container {
@@ -44,7 +45,6 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	align-items: center;
 	border-bottom: 3px solid #77a466;
 	display: flex;
 	flex-direction: column;
@@ -68,6 +68,7 @@ header h1 span {
 
 header nav {
 	padding: 20px 0;
+	width: 100%;
 }
 header nav ul {
 	align-items: center;
@@ -154,6 +155,7 @@ footer {
 	border-top: 3px solid #eee;
 	justify-content: center;
 	margin: 10px auto;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -195,13 +197,18 @@ footer span {
 
 @media all and (min-width: 1200px) {
 	/* Desktop styles here */
-	header,
+	header {
+		flex-direction: row;
+	}
+
 	header nav ul {
 		flex-direction: row;
+		justify-content: flex-end;
 	}
 
 	header h1 {
 		border-bottom: none;
 		text-align: left;
 	}
+
 }
